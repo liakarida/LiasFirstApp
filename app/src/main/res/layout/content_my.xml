@@ -15,15 +15,26 @@
     <LinearLayout
         android:orientation="horizontal"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:layout_above="@+id/button_acc"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:id="@+id/linearLayout">
 
         <EditText
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:hint="Skriv här"
-            android:textSize="24dp"
             android:id="@+id/editText"
-            android:layout_weight="1" />
+            android:layout_weight="1"
+            android:layout_gravity="center_vertical"
+            android:allowUndo="true"
+            android:autoText="false"
+            android:textColor="#dd54f0"
+            android:textColorHint="#dd54f0"
+            android:textColorLink="#9741f3"
+            android:textSize="24dp"
+            android:textStyle="italic" />
 
         <Button
             android:layout_width="0dp"
@@ -32,7 +43,10 @@
             android:id="@+id/button_send"
             android:layout_alignBottom="@+id/editText"
             android:layout_centerHorizontal="true"
-            android:layout_weight="0.5" />
+            android:layout_weight="0.5"
+            android:layout_gravity="center_vertical"
+            android:background="#c1dd54f0"
+            android:textColor="#ffffff" />
     </LinearLayout>
 
 
@@ -41,16 +55,28 @@
         android:layout_height="wrap_content"
         android:text="Accelerometer"
         android:id="@+id/button_acc"
+        android:background="#9741f3"
+        android:textColor="#ffffff"
+        android:textColorHint="#000000"
         android:layout_centerVertical="true"
-        android:layout_centerHorizontal="true"
-        android:background="#9741f3" />
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignRight="@+id/linearLayout"
+        android:layout_alignEnd="@+id/linearLayout" />
 
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Compass"
+        android:text="Kompass"
         android:id="@+id/button_compass"
+        android:hapticFeedbackEnabled="false"
+        android:textColor="#ffffff"
+        android:background="#9741f3"
+        android:layout_marginTop="40dp"
         android:layout_below="@+id/button_acc"
-        android:layout_centerHorizontal="true" />
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignRight="@+id/button_acc"
+        android:layout_alignEnd="@+id/button_acc" />
 </RelativeLayout>

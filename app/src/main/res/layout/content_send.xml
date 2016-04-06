@@ -18,10 +18,9 @@
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:text="Large Text"
         android:id="@+id/content"
+        android:textSize="40sp"
         android:layout_alignParentTop="true"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
-        android:layout_marginLeft="40dp"
-        android:layout_marginStart="40dp"
-        android:textSize="50sp" />
+        android:textColor="#dd54f0" />
 </RelativeLayout>

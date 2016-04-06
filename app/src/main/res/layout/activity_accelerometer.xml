@@ -13,11 +13,16 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Accelerometer"
-        android:textSize="24dp"
+        android:textSize="30dp"
         android:id="@+id/accText2"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="75dp" />
+        android:layout_marginTop="75dp"
+        android:textColor="#9741f3"
+        android:textColorHighlight="#000000"
+        android:textColorHint="#000000"
+        android:textColorLink="#000000"
+        android:textStyle="bold" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -26,5 +31,6 @@
         android:text="Accelerometer Data"
         android:id="@+id/accInfoText"
         android:layout_centerVertical="true"
-        android:layout_centerHorizontal="true" />
+        android:layout_centerHorizontal="true"
+        android:textColor="#9741f3" />
 </RelativeLayout>
