@@ -20,6 +20,7 @@ public class AccelerometerActivity extends AppCompatActivity implements SensorEv
         setContentView(R.layout.activity_accelerometer);
         mSensorManager = (SensorManager)getSystemService(SENSOR_SERVICE);
         mAccelerometer = mSensorManager.getDefaultSensor(Sensor.TYPE_ACCELEROMETER);
+
     }
 
 
